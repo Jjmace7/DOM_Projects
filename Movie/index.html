@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/241a20b3c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Movie World !!!</h1>
+      <input type="text" id="filter" placeholder="Enter Actor/Director/Category">
+      <button id="filter-actor-btn" onclick="filterByActor()">Filter by Actor</button>
+      <button id="filter-director-btn" onclick="filterByDirector()">Filter by Director</button>
+      <button id="filter-category-btn" onclick="filterByCategory()">Filter by Category</button>
+      <button id="filter-btn" onclick="sortByImdb()">Sort</button>
+      <button id="all-btn" onclick="allMovies()">All</button>
+      <button id="create-btn">Movie List</button>
+    </header>
+    <main>
+      <form class="pop-up">
+        <i class="fa-solid fa-xmark cancel"></i>
+        <input type="text" id="input-name" placeholder="Enter Movie Name..." />
+        <input
+          type="url"
+          id="input-link"
+          placeholder="Enter Movie Image Link..."
+        />
+        <input
+          type="number"
+          id="input-rating"
+          placeholder="Enter imdb ratings..."
+        />
+        <input
+          list="category"
+          id="input-category"
+          placeholder="Enter Movie Category..."
+        />
+        <datalist id="category">
+          <option>Action</option>
+          <option>Horror</option>
+          <option>Comedy</option>
+          <option>Romantic</option>
+        </datalist>
+        <input
+          type="url"
+          id="input-trailer"
+          placeholder="Enter Movie Trailer..."
+        />
+        <input type="text" id="input-actor" placeholder="Enter Actor Name..." />
+        <input
+          type="text"
+          id="input-director"
+          placeholder="Enter Director Name..."
+        />
+        <div class="error-msg"></div>
+        <button type="submit" id="add-btn">Add Movie</button>
+      </form>
+      <div class="movie-cont">
+        <!-- <div class="movie-item">
+          <img id="img" src="" />
+
+          <input type="text" id="movie-name" /><br>
+
+          <label>IMDb ratings:</label>
+          <input type="number" id="imdb-ratings"><br>
+
+          <label>Category:</label>
+          <input type="text" id="movie-category" /><br>
+
+          <video src="" id="movie-trailer"></video><br>
+          <button id="play-btn" target="_blank"><i class="fa-solid fa-play"></i>Watch Trailer</button><br>
+
+          <label>Actor:</label>
+          <input type="text" id="movie-actor" /><br>
+
+          <label>Director:</label>
+          <input type="text" id="movie-director" />
+        </div> -->
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

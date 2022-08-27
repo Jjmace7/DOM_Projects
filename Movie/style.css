@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./background.png");
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 1em;
+  max-width: 98%;
+}
+
+header h1 {
+  color: rgb(177, 192, 121);
+  font-family: "Oxanium", cursive;
+}
+
+header #filter {
+  width: 245px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(15, 6, 71);
+  border: none;
+  outline: none;
+  color: antiquewhite;
+}
+
+#filter-actor-btn, #filter-director-btn, #filter-category-btn, #filter-btn, #all-btn {
+  padding: 5px;
+  font-weight: bold;
+  color: antiquewhite;
+  background-color: rgb(61, 155, 61);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header #create-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  color: rgb(211, 160, 191);
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgba(64, 143, 116, 0.5);
+  cursor: pointer;
+}
+
+/* ==================================  JS  ======================================== */
+
+.pop-up {
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  background-color: rgb(99, 128, 113);
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 500px;
+  text-align: center;
+  /* display: none; */
+}
+
+.pop-up .cancel {
+  color: rgb(194, 199, 204);
+  margin-left: 330px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.pop-up input {
+  width: 90%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  background-color: rgb(28, 56, 61);
+  outline: none;
+  color: antiquewhite;
+}
+
+.pop-up input::placeholder {
+  color: rgb(172, 159, 139);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pop-up #add-btn {
+  position: absolute;
+  margin: 5px;
+  bottom: 10px;
+  right: 110px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  background-color: rgb(141, 51, 51);
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+}
+
+#img {
+  display: inline-block;
+}
+
+.movie-cont {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .movie-item {
+    height: 450px;
+    width: 300px;
+    background-color: rgb(80, 19, 19);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.movie-item #img {
+  display: flex;
+  height: 200px;
+  width: 280px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.movie-item #movie-name {
+  /* display: flex; */
+  margin: auto;
+  background-color: initial;
+  color: rgb(22, 102, 19);
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.movie-item label {
+  font-size: 18px;
+  color: whitesmoke;
+  display: flex;
+}
+
+#imdb-ratings, #movie-category, #movie-actor, #movie-director {
+  background-color: initial;
+  color: darkgoldenrod;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+#play-btn {
+  display: flex;
+  border: none;
+  background-color: rgb(59, 35, 4);
+  color: rgb(222, 135, 193);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointer;
+}
