@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(4, 61, 61);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: rgb(6, 1, 26);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin: auto 200px;
+  background-color: rgb(60, 71, 82);
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.left h3 {
+  background-color: initial;
+  margin: 0 20px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.left .tick {
+  background-color: initial;
+  margin: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(46, 2, 2);
+}
+
+.red,
+.yellow,
+.blue,
+.black {
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.right {
+  margin: auto 200px;
+  background-color: rgb(151, 13, 43);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.right #task {
+  color: white;
+  background-color: initial;
+  margin: 0 20px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+/* JS Part */
+
+.center {
+  position: absolute;
+  top: 120px;
+  left: 450px;
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  background-color: rgb(67, 80, 104);
+  padding: 20px;
+}
+
+.center #input {
+  position: absolute;
+  font-size: x-large;
+  border: none;
+  outline: none;
+  left: 20px;
+  background-color: inherit;
+  color: wheat;
+  resize: none;
+}
+
+#btn {
+  position: relative;
+  top: 220px;
+  left: -50px;
+  border: none;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.center .cross {
+  position: relative;
+  top: -30px;
+  left: 200px;
+  background-color: initial;
+  color: white;
+  cursor: pointer;
+}
+
+.red1,
+.yellow1,
+.blue1,
+.black1 {
+  height: 50px;
+  width: 60px;
+  border-radius: 8px;
+  margin: 16px 10px;
+}
+
+.red1 {
+  background-color: red;
+  cursor: pointer;
+}
+
+.yellow1 {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.blue1 {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.black1 {
+  background-color: black;
+  cursor: pointer;
+}
+
+#colors {
+  position: absolute;
+  left: 400px;
+  top: -0.5px;
+  background-color: rgb(17, 17, 17);
+  padding: 10px;
+}
+
+.todoList {
+  display: inline-block;
+}
+
+.div1 {
+  height: 250px;
+  width: 350px;
+  background-color: rgb(2, 42, 49);
+  border-radius: 20px;
+  margin: 45px 45px 0 45px;
+  padding: 20px;
+}
+
+.div1 #input {
+  font-size: x-large;
+  border: none;
+  outline: none;
+  left: 20px;
+  background-color: inherit;
+  color: wheat;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  background-color: initial;
+  position: relative;
+  top: 150px;
+}
+
+.leftIcons {
+  background-color: initial;
+}
+
+.rightIcons {
+  background-color: initial;
+}
+
+.check,
+.del,
+.edit,
+.coloredDiv,
+.lock,
+.unlock {
+  background-color: inherit;
+  font-size: x-large;
+  margin: auto 5px;
+  cursor: pointer;
+}
+
+.check {
+  color: rgb(3, 88, 3);
+}
+
+.del {
+  color: rgb(167, 14, 14);
+}
+
+.edit {
+  color: grey;
+}
+
+.coloredDiv {
+  position: absolute;
+  display: inline;
+  height: 25px;
+  width: 25px;
+}

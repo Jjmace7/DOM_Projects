@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYXRoZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#weather-input {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: brown;
+  border-radius: 5px;
+}
+
+#weather-btn {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#weather-info {
+  text-align: center;
+  margin: 20px;
+  color: aliceblue;
+}
