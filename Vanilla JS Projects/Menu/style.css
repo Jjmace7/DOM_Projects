@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    width: 100px;
+    margin: auto;
+    color: blueviolet;
+}
+
+.btns {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn {
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;  
+}
+
+.img {
+    margin: 20px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    
+}

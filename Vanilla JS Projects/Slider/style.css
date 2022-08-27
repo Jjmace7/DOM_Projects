@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slides {
+    width: 60%;
+    height: 500px;
+    border: 2px solid grey;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.btns {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

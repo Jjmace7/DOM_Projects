@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    color: rgb(19, 48, 46);
+}
+
+.head {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.container .inner {
+    position: relative;
+    margin: 10px 20px;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .inner .ques {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container .inner .ques::before {
+    content: "+";
+    position: absolute;
+    top: 18%;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container .inner .text {
+    position: relative;
+    height : 0;
+    overflow: hidden;
+}
+
+.container .inner.active .text {
+    height: auto;
+    padding: 10px;
+}
+
+.container .inner.active .ques::before {
+    content : "-";
+    position: absolute;
+    top: 10%;
+}
