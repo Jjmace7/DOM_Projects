@@ -150,6 +150,7 @@ function showData(newData) {
 }
 
 const filter = document.getElementById("filter");
+
 function filterByActor() {
   let filteredActor = arr.filter((ab) => {
     return ab.actor == filter.value;

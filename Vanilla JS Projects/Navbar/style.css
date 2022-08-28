@@ -5,14 +5,49 @@
 }
 
 .container {
+    max-width: 100vw;
     background-color: aqua;
+    align-items: center;
+    padding: 20px;
+}
 
+.span {
+    color: brown;
+}
+
+.heading {
+    display: flex;
+    margin: auto;
+}
+
+.heading a {
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-    height: 50px;
-    background-color: wheat;
+}
+
+.icons i {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.bars {
+    cursor: pointer;
+}
+
+.dragdown {
+    background-color: rgb(192, 214, 153);
+    width: 200px;
+    /* display: none; */
+}
+
+.dragdown a {
+    display: block;
+    color: white;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
 }

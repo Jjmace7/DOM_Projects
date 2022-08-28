@@ -1,5 +1,8 @@
 const cityName = document.getElementById("weather-input");
 const btn = document.getElementById("weather-btn");
+// const body = document.querySelector("body");
+
+// body.style.backgroundColor = `rgb(${scrollX}, ${scrollY}, ${scrollX - scrollY})`;
 
 btn.addEventListener("click", function (name) {
   fetch(
@@ -11,6 +14,8 @@ btn.addEventListener("click", function (name) {
         <h1>Temperature : ${Math.floor(data.main.temp - 273)} °C</h1>
         <h1>Pressure : ${data.main.pressure}</h1>
         <h1>Humidity : ${data.main.humidity}</h1>
+        <h1>Longitude : ${data.coord.lon}</h1>
+        <h1>Latitude : ${data.coord.lat}</h1>
         </div>`;
       let infoContainer = document.getElementById("weather-info");
       infoContainer.innerHTML = result;
