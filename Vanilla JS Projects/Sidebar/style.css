@@ -4,7 +4,56 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
     display: flex;
+    justify-content: space-between;
+    background-color: rgb(142, 202, 182);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.aside {
+    height: 100vh;
+    width: 20vw;
+    padding: 10px;
+    background-color: rgb(223, 219, 213);
+}
+
+span {
+    color: rgb(51, 161, 161);
+}
+
+.cancel {
+    color: rgb(103, 95, 110);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.mid a {
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.down {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 5vw;
+}
+
+.bars {
+    color: chocolate;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.active .aside {
+    background-color: aliceblue;
+    visibility: hidden;
 }
