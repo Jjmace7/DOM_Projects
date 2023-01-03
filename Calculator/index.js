@@ -55,6 +55,7 @@ function value (e) {
         let fact = 1;
         while (i > 0) {
             fact *= i;
+            i--;
         }
         display.innerText = fact;
     }

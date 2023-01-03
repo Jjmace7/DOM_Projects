@@ -22,9 +22,9 @@ btn.addEventListener("click", function () {
         cont.innerHTML += result;
       }
       console.log(data);
-      let showBtn = document.querySelector("#show-btn");
       // let innerDiv = document.querySelector(".innerDiv");
-
+      
+      let showBtn = document.querySelector("#show-btn");
       showBtn.addEventListener("click", function () {
         fetch(`https://api.tvmaze.com/shows/1?embed[]=seasons&embed[]=cast`)
           .then((res) => res.json())

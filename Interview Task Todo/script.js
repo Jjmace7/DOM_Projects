@@ -8,7 +8,6 @@ const black = document.querySelector(".black");
 const tick = document.querySelector(".tick");
 
 task.addEventListener("click", function () {
-
   let mainDiv = document.createElement("div");
   mainDiv.setAttribute("class", "center");
 
@@ -28,15 +27,19 @@ task.addEventListener("click", function () {
 
   let redDiv = document.createElement("div");
   redDiv.setAttribute("class", "red1");
+  redDiv.innerHTML = "High";
 
   let yellowDiv = document.createElement("div");
   yellowDiv.setAttribute("class", "yellow1");
+  yellowDiv.innerHTML = "Medium";
 
   let blueDiv = document.createElement("div");
   blueDiv.setAttribute("class", "blue1");
+  blueDiv.innerHTML = "Low";
 
   let blackDiv = document.createElement("div");
   blackDiv.setAttribute("class", "black1");
+  blackDiv.innerHTML = "None";
 
   let cross = document.createElement("i");
   cross.setAttribute("class", "fa-solid fa-xmark cross");
@@ -151,7 +154,7 @@ task.addEventListener("click", function () {
       });
 
       edit.addEventListener("click", function () {
-        if(this.style.color === "grey") {
+        if (this.style.color === "grey") {
           input1.removeAttribute("readonly");
           this.style.color = "pink";
         } else {
@@ -166,11 +169,6 @@ task.addEventListener("click", function () {
       });
 
       tick.addEventListener("click", function () {
-        // if (check.style.color !== "blue") {
-        //   div1.style.display = "none";
-        // } else {
-        //   div1.style.display = "inline-block";
-        // }
         if (check.style.color === "blue") {
           div1.style.display = "inline-block";
         } else {

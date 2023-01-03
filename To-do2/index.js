@@ -51,7 +51,7 @@ btn.addEventListener("click", function () {
         compDiv.append(todoMainDiv);
         button1.remove();
         todoDiv.style.border = "none";
-        todoDiv.style.textDecoration = "line-through"
+        todoDiv.style.textDecoration = "line-through";
     })
   }
 });

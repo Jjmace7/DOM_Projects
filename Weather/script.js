@@ -1,10 +1,7 @@
 const cityName = document.getElementById("weather-input");
 const btn = document.getElementById("weather-btn");
-// const body = document.querySelector("body");
 
-// body.style.backgroundColor = `rgb(${scrollX}, ${scrollY}, ${scrollX - scrollY})`;
-
-btn.addEventListener("click", function (name) {
+btn.addEventListener("click", function () {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=3cd4cfffe5085d32d29293da02653a53`
   )

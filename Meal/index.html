@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <input type="text" id="input">
-        <button id="btn">Submit</button>
+      <input type="text" id="input" />
+      <button id="btn">Submit</button>
     </div>
     <div class="contain"></div>
-</body>
+  </body>
 
-<script>
+  <script>
     const btn = document.getElementById("btn");
     const input = document.getElementById("input");
     const cont = document.querySelector(".contain");
 
     cont.innerHTML = "";
 
-    btn.addEventListener("click", function(e) {
-        e.preventDefault();
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
-    .then(result => result.json())
-    .then(data => {
-        console.log(data)
-        data["meals"].forEach(element => {
-            let {strMeal,strMealThumb,strInstructions,strYoutube} = element
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      fetch(
+        `https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`
+      )
+        .then((result) => result.json())
+        .then((data) => {
+          console.log(data);
+          data["meals"].forEach((element) => {
+            let { strMeal, strMealThumb, strInstructions, strYoutube } =
+              element;
 
             let html = `<div class="main">
                 <div class="left">
                     <h1>${strMeal}</h1>
                     <div class="right"><img src="${strMealThumb}" width="250px" height="150px"></div>
                     <p>${strInstructions}</p>
-                    <a href="${strYoutube}">Link for full preparation</a><span>
+                    <a href="${strYoutube}">Link for full preparation</a>
                 </div>
-            </div>`
-            cont.innerHTML += html
-        })            
-        }).catch(err=>alert("no recipes"))
-    })
-</script>
+            </div>`;
+            cont.innerHTML += html;
+          });
+        })
+        .catch((err) => alert("no recipes"));
+    });
+  </script>
 </html>
