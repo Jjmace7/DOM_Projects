@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dynamic table</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form class="mt-3-rem">
+          <label
+            ><input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Prakash Dey"
+          /></label>
+          <label
+            ><input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="abc@email.com"
+          /></label>
+          <label
+            ><input type="tel" name="tel" id="tel" placeholder="1234567890"
+          /></label>
+          <button type="submit" id="add-row">Add Row</button>
+        </form>
+        <div class="error-msg"></div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone No</th>
+              <th class="action-btn">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>d</td>
+              <td>d</td>
+              <td>d</td>
+              <td class="action-btn">
+                <button id="remove-btn">Remove</button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

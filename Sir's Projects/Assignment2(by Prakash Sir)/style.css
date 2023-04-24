@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mt-3-rem{
+  margin-top: 3rem;
+}
+.container{
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+}
+
+main{
+  background-color: #fff;
+
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form{
+  width: 100%;
+  height: 4rem;
+}
+label{
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: #82c782;
+  text-align: center;
+  padding: 1em;
+  border-radius: 5px;
+}
+input{
+  width: 100%;
+  height: 100%;
+  padding: 0.6em;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #d9d3d3;
+}
+button{
+  outline: none;
+  border-radius: 5px;
+}
+#add-row{
+  width: 9%;
+  height: 100%;
+  background-color: #37dc37;
+}
+
+/* Table */
+table{
+  width: 100%;
+  border-collapse: separate;
+  
+}
+tbody,thead{
+  width: 100%;
+}
+tr,td{
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+}
+th,td{
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: #efefef;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+ line-height: 3rem;
+}
+th{
+  background-color: #82c782;
+}
+.action-btn{
+  width: 8%;
+  height: 100%;
+}
+#remove-btn{
+
+  width: 100%;
+  height: 90%;
+  padding: 1em;
+  background-color: #ed4343;
+  color: white;
+
+}
+.error-msg{
+
+ color: red;
+ text-align: center;
+ font-size: 18px;
+  width: 100%;
+  height: 3rem;
+}
